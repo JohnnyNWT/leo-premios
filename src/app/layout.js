@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Leo Premios",
-  description: "Site Oficial Leo Premios",
+  title: "Leo Prêmios",
+  description: "Site Oficial Leo Prêmios",
 };
 
 export default function RootLayout({ children }) {
