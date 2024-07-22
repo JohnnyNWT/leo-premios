@@ -31,6 +31,7 @@ export default function Home() {
               </div>
             </div>
           </a>
+          
           <Link href="/sorteio/bombox">
             <div className="bg-white mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id="rifa-bombox">
               <img src="/img/acao-bombox.jpg" alt="Ação Bombox" className="w-[90px] h-28 rounded-[10px]" />
