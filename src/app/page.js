@@ -31,18 +31,16 @@ export default function Home() {
               </div>
             </div>
           </a>
-
-          <div className="bg-white mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id="rifa-bombox">
-            <img src="/img/acao-bombox.jpg" alt="Ação Bombox" className="w-[90px] h-28 rounded-[10px]" />
-            <div className="ml-3">
-              <h2 className="font-sans text-lg font-semibold text-[#202020]">BOMBOX OU R$2.000,00 NA CONTA</h2>
-              <p className="text-sm text-[#000000B3]">Bombox nova na caixa ou R$2.000,00 na conta</p>
-              <span className="p-1 px-2 rounded-md bg-[#212429] text-white text-xs font-mono shadow font-bold">Concluído</span>
+          <Link href="/sorteio/bombox">
+            <div className="bg-white mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id="rifa-bombox">
+              <img src="/img/acao-bombox.jpg" alt="Ação Bombox" className="w-[90px] h-28 rounded-[10px]" />
+              <div className="ml-3">
+                <h2 className="font-sans text-lg font-semibold text-[#202020]">BOMBOX OU R$2.000,00 NA CONTA</h2>
+                <p className="text-sm text-[#000000B3]">Bombox nova na caixa ou R$2.000,00 na conta</p>
+                <span className="p-1 px-2 rounded-md bg-[#212429] text-white text-xs font-mono shadow font-bold">Concluído</span>
+              </div>
             </div>
-            <i className="bi bi-calendar-check"></i>
-            <i className="bi bi-calendar-check"></i>
-            <i className="bi bi-calendar-check"></i>
-          </div>
+          </Link>
 
           <Link href="/sorteio/crf">
             <div className="bg-white mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id="rifa-crf">
@@ -56,6 +54,7 @@ export default function Home() {
             </div>
           </Link>
 
+          <Link href="/sorteio/iphone">
           <div className="bg-white mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id="rifa-iphone">
               <img src="/img/acao-iphone.png" alt="Ação Bombox" className="w-[90px] h-28 rounded-[10px]" />
 
@@ -65,6 +64,7 @@ export default function Home() {
                 <span className="p-1 px-2 rounded-md bg-[#212429] text-white text-xs font-mono shadow font-bold">Concluído</span>
               </div>
             </div>
+          </Link>
         </div>
 
       </div>

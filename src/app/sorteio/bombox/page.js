@@ -9,29 +9,25 @@ export default function SorteioCRF() {
           <Image src="/img/Logo.png" alt="Logo" className="" layout="fill" objectFit="contain" />
         </Link>
       </div>
-      <div className="w-full h-[100px] bg-[#1d1d1d] absolute">
-      </div>
+      
+      <div className="w-full h-[100px] bg-[#1d1d1d] absolute"></div>
+
       <div className="w-[600px] h-full mt-20 flex flex-col gap-1 rounded-t-3xl bg-[#E4E4E4] z-[1]">
-
-
         <div className="flex flex-col gap-2" id="container-rifas">
-
           <div className="mx-3 mt-3 cursor-pointer shadow-xl" id="rifa-golf">
             <div className="relative">
-              <img src="/img/acao-crf.jpg" alt="Ação CRF" className="rounded-t-lg h-72 w-full" />
+              <img src="/img/acao-bombox.jpg" alt="Ação Bombox" className="rounded-t-lg h-72 w-full" />
               <span className="p-1 px-2 rounded-md bg-[#212429] text-white text-xs font-mono font-bold shadow absolute top-64 left-2">Concluído</span>
             </div>
 
             <div className="bg-white rounded-b-lg">
               <div className="p-2">
-                <h2 className="font-sans text-lg font-medium text-[#202020]">CRF ou 5000 MIL REAIS</h2>
-                <p className="text-sm font-light text-[#000000B3]">CRF NOVA ou 5000 MIL REAIS</p>
+                <h2 className="font-sans text-lg font-medium text-[#202020]">BOMBOX OU R$2.000,00 NA CONTA</h2>
+                <p className="text-sm font-light text-[#000000B3]">Bombox nova na caixa ou R$2.000,00 na conta</p>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
     )
