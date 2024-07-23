@@ -16,12 +16,12 @@ export default function SorteioCRF() {
       <div className="w-full h-[100px] bg-[#1d1d1d] absolute"></div>
 
       {ACOES["rifa-bombox"].map((e) => (
-        <div className="w-[600px] h-full mt-20 flex flex-col gap-1 rounded-t-3xl bg-[#E4E4E4] z-[1]" key={e.id}>
+        <div className="w-[600px] max-sm:w-full h-full mt-20 flex flex-col gap-1 rounded-t-3xl bg-[#E4E4E4] z-[1]" key={e.id}>
           <div className="flex flex-col gap-2" id="container-rifas">
             <div className="mx-3 mt-3 cursor-pointer shadow-xl" id={e.id}>
               <div className="relative">
                 <img src="/img/acao-bombox.jpg" alt="Ação Bombox" className="rounded-t-lg h-72 w-full" />
-                <span className="p-1 px-2 rounded-md bg-[#212429] text-white text-xs font-mono font-bold shadow absolute top-64 left-2">{e.status}</span>
+                <span className="p-1 px-2 rounded-md bg-[#ffcc00] text-white text-xs font-mono font-bold shadow absolute top-64 left-2">{e.status}</span>
               </div>
 
               <div className="bg-white rounded-b-lg p-2">
@@ -32,10 +32,10 @@ export default function SorteioCRF() {
           </div>
 
           <div className="flex gap-4 items-center justify-center my-2">
-            <div className="flex items-baseline gap-1">
+            {/* <div className="flex items-baseline gap-1">
               <p className="text-sm font-medium font-mono text-[#323232]">Sorteio</p>
               <span className="p-1 px-2 bg-[#FFFFFF80] text-[#212529] rounded font-mono font-bold text-xs shadow-md">{e.sorteio}</span>
-            </div>
+            </div> */}
 
             <div className="flex items-baseline gap-1">
               <p className="text-sm font-medium font-mono text-[#323232]">Por apenas</p>

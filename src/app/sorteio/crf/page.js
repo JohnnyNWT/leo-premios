@@ -16,7 +16,7 @@ export default function SorteioCRF() {
       <div className="w-full h-[100px] bg-[#1d1d1d] absolute"></div>
 
       {ACOES["rifa-crf"].map((e) => (
-        <div className="w-[600px] h-full mt-20 flex flex-col gap-1 rounded-t-3xl bg-[#E4E4E4] z-[1]" key={e.id}>
+        <div className="w-[600px] max-sm:w-full h-full mt-20 flex flex-col gap-1 rounded-t-3xl bg-[#E4E4E4] z-[1]" key={e.id}>
           <div className="flex flex-col gap-2" id="container-rifas">
             <div className="mx-3 mt-3 cursor-pointer shadow-xl" id={e.id}>
               <div className="relative">
