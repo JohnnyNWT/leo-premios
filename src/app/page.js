@@ -57,7 +57,7 @@ export default function Home() {
 
           <Link href="/sorteio/iphone">
           <div className="bg-white mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id="rifa-iphone">
-              <img src="/img/acao-iphone.png" alt="Ação Bombox" className="w-[90px] h-28 rounded-[10px]" />
+              <img src="/img/acao-iphone.jpg" alt="Ação Iphone" className="w-[90px] h-28 rounded-[10px]" />
 
               <div className="ml-3">
                 <h2 className="font-sans text-lg font-semibold text-[#202020] max-sm:text-base">IPHONE 11 OU R$1.200,00 NA CONTA</h2>

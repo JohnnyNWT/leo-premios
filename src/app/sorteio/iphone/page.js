@@ -44,7 +44,7 @@ export default function SorteioCRF() {
           </div>
 
           <div className="bg-[#188754] mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id={`ganhador-${e.id}`}>
-            <img src="/img/img-ganhador.png" alt="Ação Bombox" className="w-[80px] h-22 rounded-[10px]" />
+            <img src="/img/img-ganhador.png" alt="Ação iphone" className="w-[80px] h-22 rounded-[10px]" />
             <div className="ml-3">
               <h2 className="font-sans text-2xl font-semibold text-[white]">{e.ganhador}</h2>
               <p className="text-base text-[#383838] font-medium font-sans">Ganhador(a) com o número da sorte <span className="text-[#1b1b1b]">{e.cota}</span></p>
