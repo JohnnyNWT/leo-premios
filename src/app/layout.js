@@ -8,6 +8,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/img/favicon.ico" />
+      </head>
       <body className="bg-[#f1f1f1]">{children}</body>
     </html>
   );
