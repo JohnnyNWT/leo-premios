@@ -6,7 +6,7 @@ const ACOES = {
       desc: "Bombox nova na caixa ou R$2.000,00 na conta",
       sorteio: "Será realizado amanhã 24/07/24 às 19h00",
       valor: "R$ 0,01",
-      status: "Resultado Amanhã!",
+      status: "Resultado Hoje as 19:00!",
       ganhador: "????????????????",
       cota: "??????",
     },
