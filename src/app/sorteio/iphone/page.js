@@ -20,7 +20,7 @@ export default function SorteioCRF() {
           <div className="flex flex-col gap-2" id="container-rifas">
             <div className="mx-3 mt-3 cursor-pointer shadow-xl" id={e.id}>
               <div className="relative">
-                <img src="/img/acao-iphone.png" alt="Ação Bombox" className="rounded-t-lg h-72 w-full" />
+                <img src="/img/acao-iphone.png" alt="Ação Iphone" className="rounded-t-lg h-72 w-full" />
                 <span className="p-1 px-2 rounded-md bg-[#212429] text-white text-xs font-mono font-bold shadow absolute top-64 left-2">{e.status}</span>
               </div>
 
