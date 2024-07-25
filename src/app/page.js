@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="h-screen flex items-center flex-col">
       <div className="bg-[#1d1d1d] w-full h-[70px] fixed z-[2] content-center">
-        <div className="w-[550px] flex items-center justify-between max-sm:w-full" style={{margin: "0 auto"}}>
+        <div className="w-[550px] flex items-center justify-between max-sm:w-full" style={{ margin: "0 auto" }}>
           <div className="cursor-pointer max-sm:ml-2 max-sm:mt-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-filter-left text-white" viewBox="0 0 16 16">
               <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
@@ -17,12 +17,12 @@ export default function Home() {
             <Image src="/img/Logo.png" width={60} height={50} alt="Logo Icon" className="" />
           </div>
           <Link href="/contato">
-          <div className="flex items-end flex-col cursor-pointer max-sm:mr-4 max-sm:mt-2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chat-right-dots-fill text-[#8e8e8e]" viewBox="0 0 16 16">
-              <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
-            </svg>
-            <p className="text-[#FDFFA9] font-semibold">Suporte</p>
-          </div>
+            <div className="flex items-end flex-col cursor-pointer max-sm:mr-4 max-sm:mt-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chat-right-dots-fill text-[#8e8e8e]" viewBox="0 0 16 16">
+                <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+              </svg>
+              <p className="text-[#FDFFA9] font-semibold">Suporte</p>
+            </div>
           </Link>
 
         </div>
@@ -86,6 +86,19 @@ export default function Home() {
             </div>
           </Link>
         </div>
+
+        <Link href="/contato">
+        <div className="bg-[#E4E4E4]">
+          <div id="duvidas" className="bg-[#ebebeb] mt-[16px] mx-3 p-[6px] rounded-[10px] shadow-md cursor-pointer flex items-center justify-center gap-2">
+            <span className="p-3 bg-[#d6d8d7] rounded-lg text-xl">🤷</span>
+            <div>
+              <h3 className="font-sans text-xl text-[#000000E6]">Dúvidas</h3>
+              <p className="text-base text-[#00000080] font-normal">Fale conosco</p>
+            </div>
+          </div>
+
+        </div>
+        </Link>
 
         <div className="bg-[#E4E4E4] flex flex-col gap-2" id="ganhadores-sortudos">
           <h1 className="font-sans text-2xl p-4 font-semibold text-[#000000E6]">🎉 Ganhadores <span className="text-base text-[#00000080] font-normal">sortudos</span></h1>
