@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ACOES from "./data/data";
 
 export default function Home() {
 
@@ -8,14 +9,14 @@ export default function Home() {
       <div className="bg-[#1d1d1d] w-full h-[70px] fixed z-[2]">
         <Image src="/img/Logo.png" alt="Logo" className="" layout="fill" objectFit="contain" />
       </div>
-      <div className="w-full h-[100px] bg-[#1d1d1d] absolute">
-      </div>
+
+      <div className="w-full h-[100px] bg-[#1d1d1d] absolute"></div>
+
       <div className="w-[600px] h-full mt-20 flex flex-col gap-1 rounded-t-3xl bg-[#E4E4E4] z-[1] max-sm:w-full">
         <h1 className="font-sans text-2xl p-4 font-semibold text-[#000000E6]">⚡ Prêmios <span className="text-base text-[#00000080]">Escolha sua sorte</span></h1>
 
 
         <div className="flex flex-col gap-2" id="container-rifas">
-
           <a href="https://rd.app/s/1E2OBzZieeH">
             <div className="mx-3 cursor-pointer shadow-xl" id="rifa-principal">
               <div className="relative">
@@ -31,7 +32,7 @@ export default function Home() {
               </div>
             </div>
           </a>
-          
+
           <Link href="/sorteio/bombox">
             <div className="bg-white mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id="rifa-bombox">
               <img src="/img/acao-bombox.jpg" alt="Ação Bombox" className="w-[90px] h-28 rounded-[10px]" />
@@ -56,7 +57,7 @@ export default function Home() {
           </Link>
 
           <Link href="/sorteio/iphone">
-          <div className="bg-white mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id="rifa-iphone">
+            <div className="bg-white mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id="rifa-iphone">
               <img src="/img/acao-iphone.jpg" alt="Ação Iphone" className="w-[90px] h-28 rounded-[10px]" />
 
               <div className="ml-3">
@@ -66,6 +67,47 @@ export default function Home() {
               </div>
             </div>
           </Link>
+        </div>
+
+        <div className="bg-[#E4E4E4] flex flex-col gap-2" id="ganhadores-sortudos">
+          <h1 className="font-sans text-2xl p-4 font-semibold text-[#000000E6]">🎉 Ganhadores <span className="text-base text-[#00000080]">sortudos</span></h1>
+
+          {ACOES["rifa-bombox"].map((e) => (
+            <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer" id={e.id}>
+              <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
+              <div className="ml-3">
+                <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
+                <h3 className="font-sans text-base font-medium text-[#323232]">BOMBOX OU R$2.000,00 NA CONTA</h3>
+                <p className="font-sans font-medium text-sm text-[#000000B3]">Número da sorte <span className="text-[#323232]">{e.cota}</span></p>
+                <p className="font-sans font-medium text-sm text-[#000000B3]">Data da premiação <span className="text-[#323232]">{e.sorteio}</span></p>
+              </div>
+            </div>
+          ))}
+
+          {ACOES["rifa-crf"].map((e) => (
+            <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer" id={e.id}>
+              <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
+              <div className="ml-3">
+                <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
+                <h3 className="font-sans text-base font-medium text-[#323232]">{e.titulo}</h3>
+                <p className="font-sans font-medium text-sm text-[#000000B3]">Número da sorte <span className="text-[#323232]">{e.cota}</span></p>
+                <p className="font-sans font-medium text-sm text-[#000000B3]">Data da premiação <span className="text-[#323232]">{e.sorteio}</span></p>
+              </div>
+            </div>
+          ))}
+
+          {ACOES["rifa-iphone"].map((e) => (
+            <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer mb-10" id={e.id}>
+              <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
+              <div className="ml-3">
+                <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
+                <h3 className="font-sans text-base font-medium text-[#323232]">{e.titulo}</h3>
+                <p className="font-sans font-medium text-sm text-[#000000B3]">Número da sorte <span className="text-[#323232]">{e.cota}</span></p>
+                <p className="font-sans font-medium text-sm text-[#000000B3]">Data da premiação <span className="text-[#323232]">{e.sorteio}</span></p>
+              </div>
+            </div>
+          ))}
+
         </div>
 
       </div>
