@@ -21,7 +21,7 @@ export default function SorteioCRF() {
             <div className="mx-3 mt-3 cursor-pointer shadow-xl" id={e.id}>
               <div className="relative">
                 <img src="/img/acao-bombox.jpg" alt="Ação Bombox" className="rounded-t-lg h-72 w-full" />
-                <span className="p-1 px-2 rounded-md bg-[#ffcc00] text-white text-xs font-mono font-bold shadow absolute top-64 left-2">{e.status}</span>
+                <span className="p-1 px-2 rounded-md bg-[#212429] text-white text-xs font-mono font-bold shadow absolute top-64 left-2">{e.status}</span>
               </div>
 
               <div className="bg-white rounded-b-lg p-2">
@@ -32,10 +32,10 @@ export default function SorteioCRF() {
           </div>
 
           <div className="flex gap-4 items-center justify-center my-2">
-            {/* <div className="flex items-baseline gap-1">
+            <div className="flex items-baseline gap-1">
               <p className="text-sm font-medium font-mono text-[#323232]">Sorteio</p>
               <span className="p-1 px-2 bg-[#FFFFFF80] text-[#212529] rounded font-mono font-bold text-xs shadow-md">{e.sorteio}</span>
-            </div> */}
+            </div>
 
             <div className="flex items-baseline gap-1">
               <p className="text-sm font-medium font-mono text-[#323232]">Por apenas</p>
@@ -43,13 +43,6 @@ export default function SorteioCRF() {
             </div>
           </div>
 
-          <div className="bg-[#188754] mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id={`ganhador-${e.id}`}>
-            <img src="/img/img-ganhador.png" alt="Ação Bombox" className="w-[80px] h-22 rounded-[10px]" />
-            <div className="ml-3">
-              <h2 className="font-sans text-2xl font-semibold text-[white]">{e.ganhador}</h2>
-              <p className="text-base text-[#383838] font-medium font-sans">Ganhador(a) com o número da sorte <span className="text-[#1b1b1b]">{e.cota}</span></p>
-            </div>
-          </div>
           <div className="bg-[#188754] mx-3 p-1 rounded-[10px] flex items-center shadow-md cursor-pointer" id={`ganhador-${e.id}`}>
             <img src="/img/img-ganhador.png" alt="Ação Bombox" className="w-[80px] h-22 rounded-[10px]" />
             <div className="ml-3">

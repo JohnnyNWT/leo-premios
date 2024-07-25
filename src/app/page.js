@@ -38,7 +38,7 @@ export default function Home() {
               <div className="ml-3">
                 <h2 className="font-sans text-lg font-semibold text-[#202020] max-sm:text-base">BOMBOX OU R$2.000,00 NA CONTA</h2>
                 <p className="text-sm text-[#000000B3]">Bombox nova na caixa ou R$2.000,00...</p>
-                <span className="p-1 px-2 rounded-md bg-[#ffcc00] text-white text-xs font-mono shadow font-bold">Resultado Hoje as 19:00!</span>
+                <span className="p-1 px-2 rounded-md bg-[#212429] text-white text-xs font-mono shadow font-bold">Concluído!</span>
               </div>
             </div>
           </Link>
