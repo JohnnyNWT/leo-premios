@@ -6,14 +6,32 @@ export default function Home() {
 
   return (
     <div className="h-screen flex items-center flex-col">
-      <div className="bg-[#1d1d1d] w-full h-[70px] fixed z-[2]">
-        <Image src="/img/Logo.png" alt="Logo" className="" layout="fill" objectFit="contain" />
+      <div className="bg-[#1d1d1d] w-full h-[70px] fixed z-[2] content-center">
+        <div className="w-[550px] flex items-center justify-between max-sm:w-full" style={{margin: "0 auto"}}>
+          <div className="cursor-pointer max-sm:ml-2 max-sm:mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" className="bi bi-filter-left text-white" viewBox="0 0 16 16">
+              <path d="M2 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+            </svg>
+          </div>
+          <div>
+            <Image src="/img/Logo.png" width={60} height={50} alt="Logo Icon" className="" />
+          </div>
+          <Link href="/contato">
+          <div className="flex items-end flex-col cursor-pointer max-sm:mr-4 max-sm:mt-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-chat-right-dots-fill text-[#8e8e8e]" viewBox="0 0 16 16">
+              <path d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353zM5 6a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 1 0-2 1 1 0 0 1 0 2" />
+            </svg>
+            <p className="text-[#FDFFA9] font-semibold">Suporte</p>
+          </div>
+          </Link>
+
+        </div>
       </div>
 
       <div className="w-full h-[100px] bg-[#1d1d1d] absolute"></div>
 
       <div className="w-[600px] h-full mt-20 flex flex-col gap-1 rounded-t-3xl bg-[#E4E4E4] z-[1] max-sm:w-full">
-        <h1 className="font-sans text-2xl p-4 font-semibold text-[#000000E6]">⚡ Prêmios <span className="text-base text-[#00000080]">Escolha sua sorte</span></h1>
+        <h1 className="font-sans text-2xl p-4 font-semibold text-[#000000E6]">⚡ Prêmios <span className="text-base text-[#00000080] font-normal">Escolha sua sorte</span></h1>
 
 
         <div className="flex flex-col gap-2" id="container-rifas">
@@ -70,7 +88,7 @@ export default function Home() {
         </div>
 
         <div className="bg-[#E4E4E4] flex flex-col gap-2" id="ganhadores-sortudos">
-          <h1 className="font-sans text-2xl p-4 font-semibold text-[#000000E6]">🎉 Ganhadores <span className="text-base text-[#00000080]">sortudos</span></h1>
+          <h1 className="font-sans text-2xl p-4 font-semibold text-[#000000E6]">🎉 Ganhadores <span className="text-base text-[#00000080] font-normal">sortudos</span></h1>
 
           {ACOES["rifa-bombox"].map((e) => (
             <Link href="/sorteio/bombox">
