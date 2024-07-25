@@ -102,7 +102,7 @@ export default function Home() {
 
           {ACOES["rifa-iphone"].map((e) => (
             <Link href="/sorteio/iphone">
-              <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer mb-10" id={e.id}>
+              <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer mb-4" id={e.id}>
                 <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
                 <div className="ml-3">
                   <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
