@@ -73,39 +73,45 @@ export default function Home() {
           <h1 className="font-sans text-2xl p-4 font-semibold text-[#000000E6]">🎉 Ganhadores <span className="text-base text-[#00000080]">sortudos</span></h1>
 
           {ACOES["rifa-bombox"].map((e) => (
-            <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer" id={e.id}>
-              <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
-              <div className="ml-3">
-                <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
-                <h3 className="font-sans text-base font-medium text-[#323232]">BOMBOX OU R$2.000,00 NA CONTA</h3>
-                <p className="font-sans font-medium text-sm text-[#000000B3]">Número da sorte <span className="text-[#323232]">{e.cota}</span></p>
-                <p className="font-sans font-medium text-sm text-[#000000B3]">Data da premiação <span className="text-[#323232]">{e.sorteio}</span></p>
+            <Link href="/sorteio/bombox">
+              <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer" id={e.id}>
+                <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
+                <div className="ml-3">
+                  <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
+                  <h3 className="font-sans text-base font-medium text-[#323232]">BOMBOX OU R$2.000,00 NA CONTA</h3>
+                  <p className="font-sans font-medium text-sm text-[#000000B3]">Número da sorte <span className="text-[#323232]">{e.cota}</span></p>
+                  <p className="font-sans font-medium text-sm text-[#000000B3]">Data da premiação <span className="text-[#323232]">{e.sorteio}</span></p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
 
           {ACOES["rifa-crf"].map((e) => (
-            <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer" id={e.id}>
-              <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
-              <div className="ml-3">
-                <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
-                <h3 className="font-sans text-base font-medium text-[#323232]">{e.titulo}</h3>
-                <p className="font-sans font-medium text-sm text-[#000000B3]">Número da sorte <span className="text-[#323232]">{e.cota}</span></p>
-                <p className="font-sans font-medium text-sm text-[#000000B3]">Data da premiação <span className="text-[#323232]">{e.sorteio}</span></p>
+            <Link href="/sorteio/crf">
+              <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer" id={e.id}>
+                <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
+                <div className="ml-3">
+                  <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
+                  <h3 className="font-sans text-base font-medium text-[#323232]">{e.titulo}</h3>
+                  <p className="font-sans font-medium text-sm text-[#000000B3]">Número da sorte <span className="text-[#323232]">{e.cota}</span></p>
+                  <p className="font-sans font-medium text-sm text-[#000000B3]">Data da premiação <span className="text-[#323232]">{e.sorteio}</span></p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
 
           {ACOES["rifa-iphone"].map((e) => (
-            <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer mb-10" id={e.id}>
-              <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
-              <div className="ml-3">
-                <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
-                <h3 className="font-sans text-base font-medium text-[#323232]">{e.titulo}</h3>
-                <p className="font-sans font-medium text-sm text-[#000000B3]">Número da sorte <span className="text-[#323232]">{e.cota}</span></p>
-                <p className="font-sans font-medium text-sm text-[#000000B3]">Data da premiação <span className="text-[#323232]">{e.sorteio}</span></p>
+            <Link href="/sorteio/iphone">
+              <div className="bg-white mx-3 p-[6px] rounded-[10px] flex items-center shadow-md cursor-pointer mb-10" id={e.id}>
+                <img src="/img/default.jpg" alt="Img ganhador" className="object-cover w-[90px] h-28 rounded-[10px] border-2 border-green-500" />
+                <div className="ml-3">
+                  <h2 className="font-sans text-xl font-medium text-[#323232] max-sm:text-base">{e.ganhador}</h2>
+                  <h3 className="font-sans text-base font-medium text-[#323232]">{e.titulo}</h3>
+                  <p className="font-sans font-medium text-sm text-[#000000B3]">Número da sorte <span className="text-[#323232]">{e.cota}</span></p>
+                  <p className="font-sans font-medium text-sm text-[#000000B3]">Data da premiação <span className="text-[#323232]">{e.sorteio}</span></p>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
 
         </div>
