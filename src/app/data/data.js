@@ -8,7 +8,7 @@ const ACOES = {
       valor: "R$ 0,01",
       status: "Concluído!",
       ganhador: "Rosiane",
-      cota: "762477",
+      cota: "762477 e 707511",
     },
   ],
   "rifa-crf": [
