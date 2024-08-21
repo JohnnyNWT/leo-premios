@@ -44,8 +44,8 @@ export default function Home() {
 
               <div className="bg-white rounded-b-lg">
                 <div className="p-2">
-                  <h2 className="font-sans text-lg font-medium text-[#202020]">GOLF SPORTLINE OU R$30.000,00 NA CONTA</h2>
-                  <p className="text-sm font-light text-[#000000B3]">Imagina ganhar um Golf Sportline com apenas 0,25 centavos?</p>
+                  <h2 className="font-sans text-lg font-medium text-[#202020]">GOLF SPORTLINE + CRF 230</h2>
+                  <p className="text-sm font-light text-[#000000B3]">Imagina ganhar um Golf Sportline com apenas 0,22 centavos? E ainda está concorrendo a um bilhete premiado de uma CRF 230</p>
                 </div>
               </div>
             </div>
