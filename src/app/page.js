@@ -145,7 +145,7 @@ export default function Home() {
             </Link>
           ))}
           <span className="mt-2 text-center">2024 Leo Prêmios© - Todos os direitos reservados.</span>
-          <span className="mb-5 text-center font-extralight">Desenvolvido por <a href="https://www.instagram.com/johnnydevdesigner/" target="_blank" className="text-white bg-black p-1 rounded-md">João Marcelo</a></span>
+          <span className="mb-5 text-center font-extralight text-sm">Desenvolvido por <a href="https://www.instagram.com/johnnydevdesigner/" target="_blank" className="text-white bg-black p-1 rounded-md">João Marcelo</a></span>
         </div>
 
       </div>
