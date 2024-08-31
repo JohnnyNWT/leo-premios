@@ -45,7 +45,7 @@ export default function Home() {
               <div className="bg-white rounded-b-lg">
                 <div className="p-2">
                   <h2 className="font-sans text-lg font-medium text-[#202020]">GOLF SPORTLINE + CRF 230</h2>
-                  <p className="text-sm font-light text-[#000000B3]">Imagina ganhar um Golf Sportline com apenas 0,22 centavos? E ainda está concorrendo a um bilhete premiado de uma CRF 230</p>
+                  <p className="text-sm font-light text-[#000000B3]">Imagina ganhar um Golf Sportline com apenas 0,10 centavos? E ainda está concorrendo a um bilhete premiado de uma CRF 230</p>
                 </div>
               </div>
             </div>
@@ -88,16 +88,16 @@ export default function Home() {
         </div>
 
         <Link href="/contato">
-        <div className="bg-[#E4E4E4]">
-          <div id="duvidas" className="bg-[#ebebeb] mt-[16px] mx-3 p-[6px] rounded-[10px] shadow-md cursor-pointer flex items-center justify-center gap-2">
-            <span className="p-3 bg-[#d6d8d7] rounded-lg text-xl">🤷</span>
-            <div>
-              <h3 className="font-sans text-xl text-[#000000E6]">Dúvidas</h3>
-              <p className="text-base text-[#00000080] font-normal">Fale conosco</p>
+          <div className="bg-[#E4E4E4]">
+            <div id="duvidas" className="bg-[#ebebeb] mt-[16px] mx-3 p-[6px] rounded-[10px] shadow-md cursor-pointer flex items-center justify-center gap-2">
+              <span className="p-3 bg-[#d6d8d7] rounded-lg text-xl">🤷</span>
+              <div>
+                <h3 className="font-sans text-xl text-[#000000E6]">Dúvidas</h3>
+                <p className="text-base text-[#00000080] font-normal">Fale conosco</p>
+              </div>
             </div>
-          </div>
 
-        </div>
+          </div>
         </Link>
 
         <div className="bg-[#E4E4E4] flex flex-col gap-2" id="ganhadores-sortudos">
@@ -145,6 +145,7 @@ export default function Home() {
             </Link>
           ))}
 
+          <span className="my-5 text-center font-extralight">Desenvolvido por <a href="https://www.instagram.com/johnnydevdesigner/" target="_blank" className="text-white bg-black p-1 rounded-md">João Marcelo</a></span>
         </div>
 
       </div>
