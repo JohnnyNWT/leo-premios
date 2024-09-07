@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import ACOES from "@/app/data/data";
+import Image from "next/image"
+import Link from "next/link"
+import ACOES from "@/app/data/data"
 
 export default function Contato() {
   return (

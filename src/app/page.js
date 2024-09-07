@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import ACOES from "./data/data";
+import Image from "next/image"
+import Link from "next/link"
+import ACOES from "./data/data"
 
 export default function Home() {
 
@@ -150,5 +150,5 @@ export default function Home() {
 
       </div>
     </div>
-  );
+  )
 }

@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import ACOES from "@/app/data/data";
+import Image from "next/image"
+import Link from "next/link"
+import ACOES from "@/app/data/data"
 
 export default function SorteioIphone() {
   return (
-    <div className="h-screen flex items-center flex-col">
+    <div className="h-screen flex items-center flex-col ">
       <div className="bg-[#1d1d1d] w-full h-[70px] fixed z-[2]">
         <Link href="/">
           <Image src="/img/Logo.png" alt="Logo" className="" layout="fill" objectFit="contain" />

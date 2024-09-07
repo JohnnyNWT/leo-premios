@@ -1,8 +1,8 @@
-"use client";
+"use client"
 
-import Image from "next/image";
-import Link from "next/link";
-import ACOES from "@/app/data/data";
+import Image from "next/image"
+import Link from "next/link"
+import ACOES from "@/app/data/data"
 
 export default function SorteioCRF() {
   return (
