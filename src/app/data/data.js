@@ -37,4 +37,4 @@ const ACOES = {
   ]
 }
 
-export default ACOES;
+export default ACOES
